@@ -5,7 +5,7 @@
 		<nav>
 			<ul>
 				{%- for link in config.extra.footer.links %}
-				{%- if link.url is matching('https?://') %}
+				{%- if link.url is matching('^https?://') %}
 					<li>
 						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external">
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
