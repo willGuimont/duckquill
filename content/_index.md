@@ -211,7 +211,6 @@ Files named `favicon.png` and `apple-touch-icon.png` are used as favicon and App
 - [blog.digital-horror.co](https://blog.digital-horror.com)
 - [blog.millefeuille42.fr](https://blog.millefeuille42.fr)
 - [blog.pansi21.xyz](https://blog.pansi21.xyz)
-- [blog.thundernetwork.org](https://blog.thundernetwork.org)
 - [cabysm.github.io](https://cabysm.github.io)
 - [daveparr.info](https://www.daveparr.info)
 - [davepoltorak.com](https://davepoltorak.com)
