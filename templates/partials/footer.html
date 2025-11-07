@@ -52,9 +52,9 @@
 		</p>
 	{%- endif %}
 
-	{%- if config.extra.footer.socials %}
+	{%- if config.extra.footer.externalLinks %}
 		<ul id="external-links">
-			{%- for link in config.extra.footer.socials %}
+			{%- for link in config.extra.footer.externalLinks %}
 				<li>
 					<a href="{{ link.url | safe }}" rel="{{ rel_attributes }} me" title="{{ link.name }}">
 						<i class="icon" style='--icon: url("data:image/svg+xml,{{ link.icon }}")'></i>
