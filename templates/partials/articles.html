@@ -39,7 +39,11 @@
 					{{- article_string -}}
 				</span>
 			{%- endif %}
-			<h3>{{ page.title }}</h3>
+			<h3>
+				<a href="{{ page.permalink | safe }}">
+				{{ page.title }}
+				</a>
+			</h3>
 			{%- if page.description %}
 				{{ page.description | markdown | safe }}
 			{%- endif %}
