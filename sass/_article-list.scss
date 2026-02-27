@@ -64,6 +64,10 @@
 			line-height: 1;
 			font-family: var(--font-system-ui);
 
+			a {
+				text-decoration: none;
+			}
+
 			&::after {
 				-webkit-mask-image: var(--icon-right);
 				display: inline-block;
