@@ -12,7 +12,8 @@
 	{%- include "partials/csp.html" %}
 	{%- endif %}
 	<title>{% include "partials/title.html" %}</title>
-	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
+	{%- set full_url = current_url | default(value='/') -%}
+	<link rel="canonical" href="{{ full_url | safe }}" />
 
 	{%- if config.extra.comments %}
 	<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
@@ -120,7 +121,7 @@
 
 	<meta property="og:site_name" content="{{ config.title }}" />
 	<meta property="og:title" content="{% include 'partials/title.html' %}" />
-	<meta property="og:url" content="{{ current_url | default(value='/') | safe }}" />
+	<meta property="og:url" content="{{ full_url | safe }}" />
 	<meta property="og:description" content="{% include 'partials/description.html' %}" />
 	{%- if config.extra.card is not defined or config.extra.card != false -%}
 	<meta property="og:image" content="{% include 'partials/card.html' %}" />
