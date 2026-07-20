@@ -1,11 +1,11 @@
-<link rel="icon" type="image/png" href="
 {%- if page.extra.favicon -%}
-	{{ get_url(path=page.colocated_path ~ page.extra.favicon) }}
+<link rel="icon" type="image/png" href="{{ get_url(path=page.colocated_path ~ page.extra.favicon) }}" />
 {%- elif section.extra.favicon -%}
-	{{ get_url(path=section.colocated_path ~ section.extra.favicon) }}
+<link rel="icon" type="image/png" href="{{ get_url(path=section.colocated_path ~ section.extra.favicon) }}" />
 {%- else -%}
-	{{ get_url(path='favicon.png') }}
-{%- endif -%}" />
+<link rel="icon" type="image/svg+xml" sizes="any" href="{{ get_url(path='favicon.svg') }}" />
+<link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
+{%- endif %}
 
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="
 {%- if page.extra.apple_touch_icon -%}
